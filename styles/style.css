@@ -7,7 +7,6 @@
     align-items: center;
     font-size: 18px;
     font-weight: 400;
-    max-height: 105px;
     max-width: 1052px;
 }
 
@@ -176,7 +175,6 @@
     font-size: 40px;
     width: 121px;
     line-height: 47px;
-    height: 47px;
     padding: 0 0 0 40px;
 
 
@@ -193,7 +191,7 @@
 .lots__card-list-item {
     display: flex;
     list-style: none;
-    height: 563px;
+    min-height: 563px;
     width: 334px;
 
 }
@@ -238,7 +236,7 @@
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-
+  
 }
 
 .card_type_book {
@@ -248,7 +246,7 @@
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-
+   
 }
 
 .lots__look-more-link {
@@ -312,9 +310,8 @@
 }
 
 
-.footer__address {
+.address {
     width: 240px;
-    height: 98px;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
