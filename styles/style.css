@@ -2,24 +2,26 @@
 
 .header {
     display: flex;
-    margin: 92px 50px 96px;
+    padding: 92px 50px 96px;
     justify-content: space-between;
-    align-items: center;
+   align-items: center;
     font-size: 18px;
     font-weight: 400;
     max-width: 1052px;
+    flex-wrap: wrap;
 }
 
 .header__menu {
-    display: flex;
+    flex: 0 0 auto;
     border-bottom: 1px;
     padding: 44px 27px 39px;
+
 
 }
 
 .header__links-list {
     display: flex;
-    gap: 36px;
+    gap: 34px;
 }
 
 .header__links-list-item {
@@ -58,7 +60,7 @@
 }
 
 .header__address {
-    padding-left: 16%;
+    padding-left: 15.5%;
     font-style: normal;
 }
 
@@ -145,7 +147,7 @@
 }
 
 .cover__description-text {
-    size: 22px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
     word-spacing: .9em;
@@ -193,7 +195,7 @@
     list-style: none;
     min-height: 563px;
     width: 334px;
-
+    flex-grow: 1;
 }
 
 .card_link {
@@ -224,6 +226,7 @@
     color: #fff;
     z-index: 1;
     text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .card__text {
@@ -265,14 +268,21 @@
     padding: 146px 24px 0 24px;
 }
 
-.about__column:last-child {
-    margin-top: 103px;
+.logo__column{
+padding: 35px 0 0 47px;
+
+}
+
+
+.about__column:last-child{
+    margin-top: 137px;
+    margin-left: 46px;
 }
 
 .about__logo {
     background-color: #000;
     border-radius: 50%;
-    margin-right: 72px;
+  
     padding: 65px 50px;
 }
 
@@ -296,14 +306,16 @@
     margin-top: 100px;
     color: rgba(0, 0, 0, 1);
     line-height: 24px;
+    text-align:left;
+    
+    
 }
 
 /*footer*/
 
 .footer {
     display: flex;
-    margin: 180px 26px 88px 26px;
-    align-items: stretch;
+    margin: 180px 50px 88px 50px; 
     justify-content: space-between;
     font-style: normal;
 
@@ -320,10 +332,12 @@
 .footer_menu {
     display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
 .footer__menu-list {
     list-style-type: none;
+    text-align: center;
 }
 
 .footer__menu-link-active {
@@ -344,6 +358,7 @@
     list-style-type: none;
     width: 48px;
     height: 48px;
+   
 }
 
 .footer__social-link {
